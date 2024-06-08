@@ -9,28 +9,56 @@
         body {
             font-family: 'Archivo Black', sans-serif;
             margin: 0;
+            padding: 0;
+            background-color: #d92024;
+            color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 20px;
             background-color: #d92024;
-            color: #fff;
+        }
+        .header img {
+            height: 50px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: white;
         }
         .content {
             max-width: 800px;
-            margin: 0 auto;
-            background: #d92024;
+            margin: 20px auto;
+            background: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: #333;
         }
-        h1, h2 {
-            color: #fff;
+        .content h1, .content h2 {
+            color: #333;
         }
-        p {
-            color: #fff;
+        .content p {
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <div class="content">
+    <div class="header">
+        <img src="https://github.com/RaphDab/supporturl/blob/main/IMG_2206-removebg.png" alt="Disway Logo">
+        <div class="nav">
+            <a href="#support">Support</a>
+            <a href="#cgu">CGU</a>
+            <a href="#confidentialite">Politique de confidentialité</a>
+            <a href="#demo">Démo</a>
+        </div>
+    </div>
+    <div id="support" class="content">
         <h1>Support - Disway</h1>
         <p>Pour toute question ou problème de support concernant l'application Disway, veuillez nous contacter aux coordonnées suivantes :</p>
         
@@ -40,10 +68,22 @@
         06000 Nice, France</p>
         
         <h2>Email</h2>
-        <p><a href="mailto:contact@disway.io" style="color: #fff;">contact@disway.io</a></p>
+        <p><a href="mailto:contact@disway.io">contact@disway.io</a></p>
         
         <h2>Téléphone</h2>
         <p>+33 6 18 27 68 11</p>
+    </div>
+    <div id="cgu" class="content" style="display:none;">
+        <h1>CGU</h1>
+        <p>Contenu à venir...</p>
+    </div>
+    <div id="confidentialite" class="content" style="display:none;">
+        <h1>Politique de confidentialité</h1>
+        <p>Contenu à venir...</p>
+    </div>
+    <div id="demo" class="content" style="display:none;">
+        <h1>Démo</h1>
+        <p>Contenu à venir...</p>
     </div>
 </body>
 </html>
